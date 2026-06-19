@@ -6,6 +6,7 @@
   <title>買取金額20%UPキャンペーン｜買取チェスト 朝霞駅前店</title>
   <meta name="description" content="朝霞駅徒歩約3分の買取チェスト朝霞駅前店では、買取金額20%UPキャンペーンを実施中。金・プラチナ・ブランド品・時計・ジュエリーなど幅広く高価買取。査定料・鑑定料0円、即現金化、駐車場代サービスあり。">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
@@ -20,18 +21,20 @@
         <span class="header-store-name">買取チェスト 朝霞駅前店</span>
       </div>
       <div class="header-cta">
-        <a href="tel:0482337150" class="btn btn-tel-header">
-          <span class="btn-icon">📞</span>
-          <span class="btn-text">
-            <span class="btn-label">電話で相談する</span>
-            <span class="btn-number">048-233-7150</span>
+        <a href="tel:0482337150" class="cta-btn cta-btn--tel cta-btn--header">
+          <i class="bi bi-telephone-fill"></i>
+          <span class="header-btn-label-pc">
+            <span class="tel-text">
+              <span class="tel-label">電話で相談する</span>
+              <span class="tel-number">048-233-7150</span>
+            </span>
           </span>
+          <span class="header-btn-label-sp">電話する</span>
         </a>
-        <a href="#contact" class="btn btn-form-header">
-          <span class="btn-icon">✉</span>
-          <span class="btn-text">
-            <span class="btn-label">無料査定を申し込む</span>
-          </span>
+        <a href="#contact" class="cta-btn cta-btn--form cta-btn--header">
+          <i class="bi bi-envelope"></i>
+          <span class="header-btn-label-pc">無料査定を申し込む</span>
+          <span class="header-btn-label-sp">無料査定</span>
         </a>
       </div>
     </div>
@@ -63,12 +66,17 @@
             <p class="parking-note">※駐車証明書をご提示ください。</p>
           </div>
         </div>
-        <div class="parking-cta-row">
-          <a href="#contact" class="btn btn-form-mid">
-            <span>✉</span> 無料査定を申し込む
+        <div class="cta-btn-group">
+          <a href="#contact" class="cta-btn cta-btn--form">
+            <span>無料査定を申し込む</span>
+            <i class="bi bi-envelope"></i>
           </a>
-          <a href="tel:0482337150" class="btn btn-tel-mid">
-            <span>📞</span> 電話で相談する<br><strong>048-233-7150</strong>
+          <a href="tel:0482337150" class="cta-btn cta-btn--tel">
+            <i class="bi bi-telephone-fill"></i>
+            <span class="tel-text">
+              <span class="tel-label">電話で相談する</span>
+              <span class="tel-number">048-233-7150</span>
+            </span>
           </a>
         </div>
       </div>
@@ -217,7 +225,7 @@
             <div class="item-img-wrap">
               <img src="images/05-items/items-diamond.webp" alt="ダイヤモンド・ジュエリー">
             </div>
-            <p class="item-name">ダイヤモンド・ジュエリー</p>
+            <p class="item-name">ダイヤモンド<br>ジュエリー</p>
           </div>
           <div class="item-card">
             <div class="item-img-wrap">
@@ -235,11 +243,11 @@
             <div class="item-img-wrap">
               <img src="images/05-items/items-kinken.webp" alt="テレホンカード">
             </div>
-            <p class="item-name">テレホンカード</p>
+            <p class="item-name">テレホンカード<br>金券</p>
           </div>
           <div class="item-card">
             <div class="item-img-wrap">
-              <img src="images/item-coin.jpg" alt="古銭・古紙幣">
+              <img src="images/05-items/items-kosen.webp" alt="古銭・古紙幣">
             </div>
             <p class="item-name">古銭・古紙幣<br>その他古物</p>
           </div>
@@ -256,43 +264,37 @@
         <div class="consult-grid">
           <div class="consult-card">
             <div class="consult-img-wrap">
-              <img src="images/consult-necklace.jpg" alt="切れたネックレス">
-              <div class="consult-img-placeholder" aria-hidden="true">📿</div>
+              <img src="images/06-consult/broken-necklace.webp" alt="切れたネックレス" class="consult-img-xs">
             </div>
             <p class="consult-name">切れたネックレス</p>
           </div>
           <div class="consult-card">
             <div class="consult-img-wrap">
-              <img src="images/consult-earring.jpg" alt="片方だけのピアス">
-              <div class="consult-img-placeholder" aria-hidden="true">👂</div>
+              <img src="images/06-consult/single-earring.webp" alt="片方だけのピアス">
             </div>
             <p class="consult-name">片方だけのピアス</p>
           </div>
           <div class="consult-card">
             <div class="consult-img-wrap">
-              <img src="images/consult-watch.jpg" alt="壊れた時計">
-              <div class="consult-img-placeholder" aria-hidden="true">⌚</div>
+              <img src="images/06-consult/broken-watch.webp" alt="壊れた時計" class="consult-img-sm">
             </div>
             <p class="consult-name">壊れた時計</p>
           </div>
           <div class="consult-card">
             <div class="consult-img-wrap">
-              <img src="images/consult-bag.jpg" alt="傷や汚れのあるバッグ">
-              <div class="consult-img-placeholder" aria-hidden="true">👜</div>
+              <img src="images/06-consult/damaged-item.webp" alt="傷や汚れのあるバッグ" class="consult-img-xs">
             </div>
             <p class="consult-name">傷や汚れのあるバッグ</p>
           </div>
           <div class="consult-card">
             <div class="consult-img-wrap">
-              <img src="images/consult-nobox.jpg" alt="箱や保証書のない商品">
-              <div class="consult-img-placeholder" aria-hidden="true">📦</div>
+              <img src="images/06-consult/no-box-item.webp" alt="箱や保証書のない商品">
             </div>
             <p class="consult-name">箱や保証書のない商品</p>
           </div>
           <div class="consult-card">
             <div class="consult-img-wrap">
-              <img src="images/consult-old.jpg" alt="古いアクセサリー">
-              <div class="consult-img-placeholder" aria-hidden="true">💍</div>
+              <img src="images/06-consult/old-jewelry.webp" alt="古いアクセサリー">
             </div>
             <p class="consult-name">古いアクセサリー</p>
           </div>
@@ -315,6 +317,7 @@
               <h3 class="flow-step-title">お問い合わせ・ご来店</h3>
               <p class="flow-step-text">お電話またはフォームからお気軽にご相談ください。</p>
             </div>
+            <img src="images/07-flow/step1.webp" alt="" class="flow-step-img">
           </div>
           <div class="flow-arrow">▶</div>
           <div class="flow-step">
@@ -323,6 +326,7 @@
               <h3 class="flow-step-title">無料査定</h3>
               <p class="flow-step-text">専門スタッフがお品物を丁寧に査定いたします。</p>
             </div>
+            <img src="images/07-flow/step2.webp" alt="" class="flow-step-img">
           </div>
           <div class="flow-arrow">▶</div>
           <div class="flow-step">
@@ -331,6 +335,7 @@
               <h3 class="flow-step-title">査定額のご提示</h3>
               <p class="flow-step-text">査定内容をご説明し、買取金額をご案内いたします。</p>
             </div>
+            <img src="images/07-flow/step3.webp" alt="" class="flow-step-img">
           </div>
           <div class="flow-arrow">▶</div>
           <div class="flow-step">
@@ -339,6 +344,7 @@
               <h3 class="flow-step-title">その場で現金お支払い</h3>
               <p class="flow-step-text">査定額にご納得いただけましたら、その場で現金にてお支払いいたします。</p>
             </div>
+            <img src="images/07-flow/step4.webp" alt="" class="flow-step-img">
           </div>
         </div>
       </div>
@@ -355,12 +361,17 @@
           <div class="cta-feature">即現金化</div>
         </div>
         <p class="cta-lead">まずは査定額を確認してみませんか？</p>
-        <div class="cta-buttons">
-          <a href="#contact" class="btn btn-form-large">
-            <span>✉</span> 無料査定フォーム
+        <div class="cta-btn-group">
+          <a href="#contact" class="cta-btn cta-btn--form">
+            <span>無料査定を申し込む</span>
+            <i class="bi bi-envelope"></i>
           </a>
-          <a href="tel:0482337150" class="btn btn-tel-large">
-            <span>📞</span> 電話で相談する<br><span class="tel-number-large">048-233-7150</span>
+          <a href="tel:0482337150" class="cta-btn cta-btn--tel">
+            <i class="bi bi-telephone-fill"></i>
+            <span class="tel-text">
+              <span class="tel-label">電話で相談する</span>
+              <span class="tel-number">048-233-7150</span>
+            </span>
           </a>
         </div>
       </div>
@@ -421,25 +432,21 @@
     <!-- 最終CTA -->
     <section class="final-cta-section">
       <div class="container">
-        <h2 class="final-cta-title">売るなら今がお得です！</h2>
-        <div class="final-cta-campaign">
-          <p class="final-cta-main">買取金額<span class="final-pct">20%UP</span></p>
-          <p class="final-cta-sara">さらに</p>
-          <p class="final-cta-parking">駐車場代サービス</p>
-        </div>
-        <div class="final-cta-features">
-          <span>査定料0円</span>
-          <span>相談だけでもOK</span>
-          <span>即現金化</span>
-        </div>
-        <p class="final-cta-lead">少しでも高く売りたい方は、お気軽にご相談ください。</p>
-        <div class="final-cta-buttons">
-          <a href="#contact" class="btn btn-form-large">
-            <span>✉</span> 無料査定を申し込む
-          </a>
-          <a href="tel:0482337150" class="btn btn-tel-final">
-            <span>📞</span> 048-233-7150 に電話する
-          </a>
+        <div class="final-cta-inner">
+          <img src="images/08-final-cta/banner.webp" alt="売るなら今がお得です" class="final-cta-banner">
+          <div class="cta-btn-group">
+            <a href="#contact" class="cta-btn cta-btn--form cta-btn--final">
+              <span>無料査定を申し込む</span>
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="tel:0482337150" class="cta-btn cta-btn--tel cta-btn--final">
+              <i class="bi bi-telephone-fill"></i>
+              <span class="tel-text">
+                <span class="tel-label">電話で相談する</span>
+                <span class="tel-number">048-233-7150</span>
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -449,21 +456,19 @@
   <!-- フッター -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <p class="footer-store">買取チェスト 朝霞駅前店</p>
-      <p class="footer-tel"><a href="tel:0482337150">048-233-7150</a></p>
-      <p class="footer-hours">営業時間 11:00〜18:00</p>
-      <p class="footer-closed">定休日 火曜日・水曜日</p>
       <p class="footer-copy">© 買取チェスト 朝霞駅前店</p>
     </div>
   </footer>
 
   <!-- 固定フッターCTA（スマホ） -->
-  <div class="fixed-cta">
-    <a href="#contact" class="fixed-btn-form">
-      <span>✉</span><br>無料査定を申し込む
+  <div class="sp-fixed-cta">
+    <a href="#contact" class="sp-fixed-cta__btn sp-fixed-cta__btn--form">
+      <i class="bi bi-envelope"></i>
+      <span>無料査定</span>
     </a>
-    <a href="tel:0482337150" class="fixed-btn-tel">
-      <span>📞</span><br>電話で相談する<br><strong>048-233-7150</strong>
+    <a href="tel:0482337150" class="sp-fixed-cta__btn sp-fixed-cta__btn--tel">
+      <i class="bi bi-telephone-fill"></i>
+      <span>電話する</span>
     </a>
   </div>
 
