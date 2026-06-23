@@ -120,7 +120,8 @@ a {
   display: none;
 }
 
-.cta-btn--form.cta-btn--header {
+.cta-btn--form.cta-btn--header,
+.cta-btn--line.cta-btn--header {
   font-size: 18px;
 }
 
