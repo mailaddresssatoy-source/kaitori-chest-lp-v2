@@ -69,6 +69,10 @@ a {
   margin: 0 auto;
 }
 
+.br-tablet {
+  display: none;
+}
+
 .cta-btn {
   display: inline-flex;
   align-items: center;
@@ -172,12 +176,22 @@ a {
 }
 
 .cta-btn--form {
-  background: linear-gradient(180deg, #18c943 0%, #008f24 100%);
-  box-shadow: 0 4px 12px rgba(0,143,36,0.4);
+  background: linear-gradient(180deg, #2a5298 0%, #1a3a6e 100%);
+  box-shadow: 0 4px 12px rgba(26,58,110,0.4);
   font-size: 24px;
 }
 
 .cta-btn--form i {
+  font-size: 24px;
+}
+
+.cta-btn--line {
+  background: linear-gradient(180deg, #06e05a 0%, #00b300 100%);
+  box-shadow: 0 4px 12px rgba(0,179,0,0.4);
+  font-size: 24px;
+}
+
+.cta-btn--line i {
   font-size: 24px;
 }
 
@@ -258,6 +272,23 @@ a {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+  }
+
+  .result-img-wrap {
+    height: 240px !important;
+    width: 100%;
+  }
+
+  .flow-step-img {
+    width: 25% !important;
+  }
+
+  .consult-img-wrap {
+    height: auto !important;
+  }
+
+  .result-price {
+    font-size: 20px !important;
   }
 
   .header-btn-label-pc {
@@ -1230,14 +1261,17 @@ a {
   background: #fff;
   border: 1px solid #e0d4a0;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 20px 0;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
   text-align: center;
+  overflow: hidden;
 }
 
 .flow-step-img {
-  width: 80px;
+  width: 50%;
   height: auto;
+  display: block;
+  order: 2;
 }
 
 .flow-arrow {
@@ -1246,6 +1280,10 @@ a {
   color: var(--red-main);
   padding: 6px 0;
   font-weight: 900;
+}
+
+.flow-step-content {
+  order: 3;
 }
 
 .flow-step-num {
@@ -1276,6 +1314,12 @@ a {
 .flow-step-text {
   font-size: 13px;
   color: #555;
+  line-height: 1.7;
+}
+
+.flow-step-note {
+  font-size: 11px;
+  color: #777;
   line-height: 1.7;
 }
 
@@ -1350,6 +1394,131 @@ a {
 .cta-buttons .btn {
   align-self: stretch;
   justify-content: center;
+}
+
+/* parking-section・cta-section のボタンフォント縮小 */
+.parking-section .cta-btn--form,
+.cta-section .cta-btn--form,
+.parking-section .cta-btn--line,
+.cta-section .cta-btn--line {
+  font-size: 20px;
+}
+
+.parking-section .cta-btn--form i,
+.cta-section .cta-btn--form i,
+.parking-section .cta-btn--line i,
+.cta-section .cta-btn--line i {
+  font-size: 20px;
+}
+
+.parking-section .cta-btn--tel .tel-label,
+.cta-section .cta-btn--tel .tel-label {
+  font-size: 13px;
+}
+
+.parking-section .cta-btn--tel .tel-number,
+.cta-section .cta-btn--tel .tel-number {
+  font-size: 20px;
+}
+
+.parking-section .cta-btn--tel i,
+.cta-section .cta-btn--tel i {
+  font-size: 20px;
+}
+
+/* ========== お問い合わせフォーム ========== */
+.contact-section {
+  background: #fff;
+  padding: 56px 0;
+}
+
+.contact-lead {
+  text-align: center;
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.contact-form {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form__row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-form__label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-form__required {
+  background: var(--red-main);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  color: var(--text-dark);
+  background: #fafafa;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: #fff;
+}
+
+.contact-form__textarea {
+  resize: vertical;
+}
+
+.contact-form__submit {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.contact-form__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--red-main);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 900;
+  padding: 16px 48px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.contact-form__btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
 }
 
 /* ========== 店舗情報 ========== */
@@ -1487,8 +1656,12 @@ a {
   gap: 32px;
 }
 
+.final-cta-inner .cta-btn-group {
+  flex-direction: column;
+}
+
 .final-cta-banner {
-  width: calc(50% - 30px);
+  width: calc(50% + 56px);
   height: auto;
   display: block;
   flex-shrink: 0;
@@ -1678,11 +1851,15 @@ a {
 }
 
 .sp-fixed-cta__btn--form {
-  background: linear-gradient(180deg, #20d94a 0%, #008f24 100%);
+  background: linear-gradient(180deg, #2a5298 0%, #1a3a6e 100%);
 }
 
 .sp-fixed-cta__btn--tel {
   background: linear-gradient(180deg, #f02516 0%, #b40000 100%);
+}
+
+.sp-fixed-cta__btn--line {
+  background: linear-gradient(180deg, #06e05a 0%, #00b300 100%);
 }
 
 body {
@@ -1880,6 +2057,96 @@ body {
 
 /* ========== タブレット専用 (768px〜1023px) ========== */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .site-header {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .header-inner {
+    padding: 8px 10px;
+    gap: 6px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .header-logo {
+    flex-shrink: 1;
+    min-width: 0;
+    gap: 6px;
+  }
+
+  .header-logo-img {
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .header-store-name {
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header-cta {
+    flex-shrink: 0;
+    gap: 6px;
+  }
+
+  .header-btn-label-pc {
+    display: none;
+  }
+
+  .header-btn-label-sp {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .cta-btn--header {
+    flex-direction: column;
+    gap: 4px;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    flex: none;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  .cta-btn--header i {
+    font-size: 22px !important;
+  }
+
+  .cta-btn--form.cta-btn--header {
+    font-size: 13px;
+  }
+
+  .br-tablet {
+    display: inline;
+  }
+
+  .result-card {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .result-img-wrap {
+    flex: 1;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .result-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   .nensho-inner {
     flex-direction: column;
     align-items: center;
